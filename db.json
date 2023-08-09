@@ -1,0 +1,67 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Samsung M 40",
+            "color": "blue",
+            "price": 15000,
+            "category": "Mobile",
+            "brand": "Samsung",
+            "photo": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTa4DRJjN44xeDUpj94jcqmGNqWoIZZAEMdp8_KBNPFphLxpFK8GiXusOJtKHkDvh62PjXu6mzMuK4YbLja7gpdSmKC53nhv2IPg4I2Gfaavx35U7LqZF8uQoY7y4F4uLUnhQ&usqp=CAc"
+        },
+        {
+            "id": 2,
+            "name": "Samsung F20",
+            "color": "blue",
+            "price": 50000,
+            "category": "Mobile",
+            "brand": "Samsung",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Hci8yDhhhZGAG9M6X8d290O_zibziAcDqg&usqp=CAU"
+        },
+        {
+            "id": 3,
+            "name": "T-shirt",
+            "color": "white",
+            "price": 5000,
+            "category": "cloths",
+            "brand": "Nike",
+            "photo": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/0d2eef8f-dc1d-4d9f-a14d-8604cc80d3d0/sportswear-essentials-t-shirt-DMmFTS.png"
+        },
+        {
+            "id": 4,
+            "name": "Sports Shoes",
+            "color": "green and blue",
+            "price": 8000,
+            "category": "cloths",
+            "brand": "Nike",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3Bcx8SxBeXx7dnQNqlzxhTa03IaQrTbGFg&usqp=CAU"
+        },
+        {
+            "id": 5,
+            "name": "530 laptop",
+            "color": "black",
+            "price": 88000,
+            "category": "Electronics",
+            "brand": "HP",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJeAU7tIG_MqLsfnbA_2nMJad-iWrdZaKnDw&usqp=CAU"
+        },
+        {
+            "id": 6,
+            "name": "earphone - 10",
+            "color": "black",
+            "price": 800,
+            "category": "Electronics",
+            "brand": "mivi",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRcGvjyNlq5vw4QM9pWzaXZ0B4Z56NLv5oQ&usqp=CAU"
+        },
+        {
+            "id": 7,
+            "name": "black shirt",
+            "color": "black",
+            "price": 1800,
+            "category": "cloths",
+            "brand": "tommy",
+            "photo": "https://assets.ajio.com/medias/sys_master/root/20220707/qoWM/62c6c623aeb26921af691e05/-473Wx593H-469129343-black-MODEL.jpg"
+        }
+    ]
+}
