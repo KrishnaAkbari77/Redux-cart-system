@@ -4,7 +4,6 @@ const cartReducer = (state = [], actions) => {
         case "ADD_ITEM":
             return [...state, actions.data]
         case "UPDATE_ITEM":
-            console.log(actions.data);
             return actions.data
         case "DELETE_SINGLE_ITEM":
             return state.map(item => {

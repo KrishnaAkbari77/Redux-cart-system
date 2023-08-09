@@ -15,10 +15,8 @@ const Products = () => {
 
     const handleAddItem = (item, index) => {
         const existing = Productsdata.cart.find(cartItem => cartItem.id === item.id);
-        console.log(index, existing);
         if (index > 4) {
             if (existing) {
-                console.log("This item cant be added more han once");
                 return;
             } else {
                 dispatch(addItem({ ...item, Quantity: 1 }))
@@ -30,13 +28,13 @@ const Products = () => {
                     cartItem.id === item.id ? { ...cartItem, Quantity: existing.Quantity + (quantity[item.id] || 1) } : cartItem
                 )
                 dispatch(updateItem(updatedCart));
-                console.log("This item added again");
             }
             else {
                 dispatch(addItem({ ...item, Quantity: quantity[item.id] || 1 }))
             }
         }
-    };
+    }
+
 
     return (
         <div className='container'>
@@ -57,11 +55,11 @@ const Products = () => {
                                         min="1"
                                         value={quantity[i.id] || ""}
                                         onChange={(e) => {
-                                            const input = parseInt(e.target.value);
-                                            if (input === "" || (!isNaN(input) && parseInt(input) >= 1)) {
+                                            const inputValue = e.target.value;
+                                            if (inputValue === "" || (!isNaN(inputValue) && parseInt(inputValue) >= 1)) {
                                                 setQuantity(prevQuantities => ({
                                                     ...prevQuantities,
-                                                    [i.id]: input
+                                                    [i.id]: parseInt(inputValue)
                                                 }));
                                             }
                                         }}
@@ -75,16 +73,20 @@ const Products = () => {
                                 <div>Total Price: {quantity[i.id] && i.price * quantity[i.id]}</div>
                                 <div>Total Quantity: {quantity[i.id]}</div>
                                 <div>Each price: {i.price}</div>
-                                <div>{Productsdata.cart.find(item => item.id === i.id) &&
-                                    <h5 h5 className='text-success fw-bold '>Item Added To Cart</h5>}
+                                <div>
+                                    {Productsdata.cart.find(item => item.id === i.id) && (
+                                        <h5 className='text-success fw-bold'>{Productsdata.cart.find(item => item.id === i.id).Quantity} Item Added To Cart</h5>
+                                    )}
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
         </div >
-    );
+    )
 };
+
 
 export default Products;

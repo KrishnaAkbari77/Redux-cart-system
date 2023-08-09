@@ -6,14 +6,12 @@ export const getProducts = (data) => {
 }
 
 export const addItem = (data) => {
-    console.log(data);
     return {
         type: "ADD_ITEM",
         data
     }
 }
 export const updateItem = (data) => {
-    // console.log(data);
     return {
         type: "UPDATE_ITEM",
         data
